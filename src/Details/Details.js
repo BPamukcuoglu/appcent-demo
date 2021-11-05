@@ -86,7 +86,7 @@ export const Details = () => {
                 <div className={classes.topPaper}>
                     <img src={`https://image.tmdb.org/t/p/original/${data.poster_path}`} alt="" className={classes.img} onClick={() => { window.open(`https://image.tmdb.org/t/p/original/${data.poster_path}`, "_blank") }}></img>
                     <img src={`https://image.tmdb.org/t/p/original/${data.backdrop_path}`} alt="" className={classes.img} onClick={() => { window.open(`https://image.tmdb.org/t/p/original/${data.backdrop_path}`, "_blank") }}></img>
-                    {video != "null"
+                    {video !== "null"
                         ? <iframe style={{ height: "24em", width: "33%" }}
                             src={`https://www.youtube.com/embed/${video}`}
                             title="youtube"
